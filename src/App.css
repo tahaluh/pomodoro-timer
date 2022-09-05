@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 60vh;
+  gap: 1em;
 }
 
 .Tittle {
