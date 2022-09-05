@@ -58,6 +58,7 @@ button {
     text-shadow: 1px 2px 2px black;
     color: aliceblue;
     
+    filter: var(--drop-shadow);
     -webkit-filter: var(--drop-shadow);
     -moz-filter: var(--drop-shadow);
     -ms-filter: var(--drop-shadow);
