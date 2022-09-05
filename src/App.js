@@ -11,9 +11,8 @@ function App() {
     seconds: 0,
   });
 
-  const audio = new Audio('https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav');
   const playBeep = () => {
-    audio.play();
+    document.getElementById('beep').play()
   };
 
   const timeUpdate = () => {
@@ -152,6 +151,12 @@ function App() {
           <i className="fa-solid fa-rotate-left"></i>
         </button>
       </div>
+      <audio
+          id="beep"
+          preload="auto"
+          src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+        />
+        <button onClick={playBeep}>a</button>
     </div>
   );
 }
