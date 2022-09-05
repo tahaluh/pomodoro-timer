@@ -1,6 +1,5 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import beep from "./assets/beep.mp3";
 
 function App() {
   const [sessionTime, setSessionTime] = useState(25);
@@ -12,7 +11,7 @@ function App() {
     seconds: 0,
   });
 
-  const audio = new Audio(beep);
+  const audio = new Audio('https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav');
   const playBeep = () => {
     audio.play();
   };
