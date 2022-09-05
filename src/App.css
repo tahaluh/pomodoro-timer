@@ -43,16 +43,25 @@ button {
 }
 
 .Timer--Div{
-    border: 2px solid #2c3e50;
+    background: url("assets/tomato.svg") no-repeat;
+    background-size: contain;
     display: inline-block;
     padding: 1em;
     width: 13vh;
     height: 13vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 50%;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.212);
+    text-shadow: 1px 2px 2px black;
+    color: aliceblue;
+    
+    -webkit-filter: var(--drop-shadow);
+    -moz-filter: var(--drop-shadow);
+    -ms-filter: var(--drop-shadow);
+    -o-filter: var(--drop-shadow);
 }
 
 .TimerState {
